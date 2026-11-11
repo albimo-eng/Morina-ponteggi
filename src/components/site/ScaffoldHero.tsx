@@ -62,7 +62,7 @@ function build() {
       lines.push(rail);
       order.push(rail);
     }
-    const label: Label = { x: 34, y: y1 + 4, text: `+${((lv + 1) * 2).toFixed(2)}` };
+    const label: Label = { x: 50, y: y1 + 4, text: `+${((lv + 1) * 2).toFixed(2)}` };
     labels.push(label);
     order.push(label);
   }
