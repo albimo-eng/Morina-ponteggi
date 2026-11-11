@@ -61,8 +61,8 @@ export function Footer() {
             <div>
               <h2 className="eyebrow text-ink-muted">Zone servite</h2>
               <ul className="mt-5 space-y-3 text-sm">
-                <li>Brescia e provincia</li>
-                <li>Milano e provincia</li>
+                <li>Brescia</li>
+                <li>Milano</li>
                 <li>Altre zone del Nord Italia, su richiesta</li>
               </ul>
             </div>
