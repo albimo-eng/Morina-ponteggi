@@ -198,7 +198,9 @@ function Home() {
                   <span className="font-mono text-sm text-primary">{s.n}</span>
                   <span className="h-px w-12 bg-ink-border" aria-hidden="true" />
                 </div>
-                <h3 className="mt-10 text-2xl font-bold tracking-tight [font-stretch:112%]">{s.title}</h3>
+                <h3 className="mt-10 text-2xl font-bold tracking-tight [font-stretch:112%]">
+                  {s.title}
+                </h3>
                 <p className="mt-3 text-ink-muted">{s.text}</p>
               </li>
             ))}
@@ -215,8 +217,8 @@ function Home() {
               Dove lavoriamo
             </h2>
             <p className="mt-5 max-w-sm text-muted-foreground">
-              Operiamo principalmente tra Brescia e Milano. Per cantieri in altre zone del Nord Italia
-              contattaci per verificare la disponibilità.
+              Operiamo principalmente tra Brescia e Milano. Per cantieri in altre zone del Nord
+              Italia contattaci per verificare la disponibilità.
             </p>
           </div>
           <ul className="lg:col-span-8">
@@ -257,17 +259,22 @@ function Home() {
             </Button>
           </div>
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {GALLERY.slice(0, 3).map((slot, i) => (
+            {GALLERY.map((slot, i) => (
               <PhotoSlot
                 key={slot.id}
                 slot={slot}
+                sizes={
+                  i === 2
+                    ? "(min-width: 1024px) 33vw, 100vw"
+                    : "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                }
                 className={`reveal ${i === 2 ? "sm:col-span-2 lg:col-span-1" : ""}`}
                 ratio={i === 2 ? "aspect-[4/5] sm:aspect-[16/9] lg:aspect-[4/5]" : "aspect-[4/5]"}
               />
             ))}
           </div>
           <p className="mt-6 text-sm text-muted-foreground">
-            Le fotografie dei cantieri Morina Ponteggi saranno pubblicate a breve.
+            Fotografie originali di ponteggi e materiali Morina Ponteggi.
           </p>
         </div>
       </section>

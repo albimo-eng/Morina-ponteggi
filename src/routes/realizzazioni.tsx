@@ -6,7 +6,8 @@ import { PhotoSlot } from "@/components/site/PhotoSlot";
 import { GALLERY } from "@/content/gallery";
 
 const TITLE = "Realizzazioni | Morina Ponteggi";
-const DESC = "Fotografie dei cantieri di ponteggi realizzati da Morina Ponteggi tra Brescia, Milano e Nord Italia.";
+const DESC =
+  "Fotografie dei cantieri di ponteggi realizzati da Morina Ponteggi tra Brescia, Milano e Nord Italia.";
 
 export const Route = createFileRoute("/realizzazioni")({
   staticData: { sitemap: true },
@@ -32,7 +33,7 @@ function Realizzazioni() {
         code="R/02"
         eyebrow="Realizzazioni"
         title="Dai nostri cantieri."
-        lead="In questa pagina pubblicheremo solo fotografie reali dei cantieri Morina Ponteggi. Gli spazi qui sotto sono segnaposto in attesa delle foto."
+        lead="Una selezione di fotografie originali di ponteggi, strutture e materiali Morina Ponteggi."
       />
       <section className="container-x section-y" aria-label="Galleria">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
