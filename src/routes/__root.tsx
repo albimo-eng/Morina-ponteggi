@@ -91,7 +91,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
-      { rel: "icon", href: "/favicon.ico", sizes: "any" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
@@ -132,7 +131,7 @@ function RootComponent() {
         Vai al contenuto
       </a>
       <Header />
-      <main id="contenuto" className="pb-[calc(64px+env(safe-area-inset-bottom))] lg:pb-0">
+      <main id="contenuto">
         <Outlet />
       </main>
       <Footer />
