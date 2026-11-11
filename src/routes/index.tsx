@@ -57,16 +57,26 @@ const STEPS = [
   {
     n: "02",
     title: "Valutazione",
-    text: "Analizziamo misure, accessi e fasi di lavoro e definiamo con te il preventivo.",
+    text: "Analizziamo misure, accessi e fasi di lavoro per individuare la soluzione più adatta.",
   },
   {
     n: "03",
+    title: "Preventivo",
+    text: "Prepariamo un preventivo personalizzato in base alle caratteristiche del cantiere, alla tipologia di ponteggio, alle superfici e alla durata prevista dei lavori.",
+  },
+  {
+    n: "04",
     title: "Montaggio",
     text: "Montiamo il ponteggio nella data concordata, coordinandoci con l'impresa sul cantiere.",
   },
   {
-    n: "04",
-    title: "Smontaggio",
+    n: "05",
+    title: "Noleggio",
+    text: "Mettiamo a disposizione il ponteggio per il periodo concordato, con condizioni e durata del noleggio definite in fase di preventivo.",
+  },
+  {
+    n: "06",
+    title: "Smontaggio e ritiro",
     text: "A fine lavori smontiamo la struttura e ritiriamo il materiale.",
   },
 ];
@@ -191,7 +201,7 @@ function Home() {
             <br />
             al ritiro.
           </h2>
-          <ol className="mt-16 grid gap-px bg-ink-border md:grid-cols-2 lg:grid-cols-4">
+          <ol className="mt-16 grid gap-px bg-ink-border md:grid-cols-2 lg:grid-cols-3">
             {STEPS.map((s) => (
               <li key={s.n} className="reveal bg-ink p-7 md:p-8">
                 <div className="flex items-center justify-between">
